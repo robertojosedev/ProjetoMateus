@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineDev - Filmes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h1>Cine<span>Dev</span></h1>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#filmes">Filmes</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<main>
+<section id="inicio" class="inicio">
+    <h2>CineDev</h2>
+    <p>Um Projeto de Site Criado Por Fãs do Miranha.</p>
+    <a href="#filmes" class="botao">Ver filmes</a>
+</section>
+
+<section id="filmes" class="catalogo">
+    <h2>Catálogo de filmes</h2>
+    <input type="text" id="pesquisa" placeholder="Pesquisar filme...">
+
+    <div class="cards" id="listaFilmes">
+
+        <div class="card" data-nome="DoomsDay" data-sinopse="Filme Mais esperado no ANO">
+            <img src="imagens/doom.jpg" alt="Capa do filme">
+            <h3>DoomsDay</h3>
+            <p>Filme Mais esperado no ANO</p>
+            <button class="assistir" data-video="google.com">Assistir</button>
+        </div>
+
+        <div class="card" data-nome="Homem Aranha - Um novo Dia" data-sinopse="Nesse Filme Nosso Amigo da Vizinhança Acorda em um Novo Dia">
+            <img src="imagens/homem aranha - um novo dia.jpg" alt="Capa do filme">
+            <h3>Homem Aranha - Um novo Dia</h3>
+            <p>Nesse Filme Nosso Amigo da Vizinhança Acorda em um Novo Dia</p>
+            <button class="assistir" data-video="#">Assistir</button>
+        </div>
+
+        <div class="card" data-nome="Homem Aranha - Multiverso Do Miranha data-sinopse="Nesse filme vai ter até o porco aranha que sempre lembro da musita "porco" aranha, porco aranha, porco porco e mais aranha>
+            <img src="imagens/homem aranha - multiverso do miranha.jpg" alt="Capa do filme">
+            <h3>Homem Aranha - Multiverso Do Miranha</h3>
+            <p>Nesse filme vai ter até o porco aranha que sempre lembro da musita "porco" aranha, porco aranha, porco porco e mais aranha</p>
+            <button class="assistir" data-video="#">Assistir</button>
+        </div>
+        
+        <div class="card" data-nome="Homem Aranha - Sem Volta Para Casa" data-sinopse="Nesse Filme Nosso Amigo da Vizinhança Ficou Sem Casa Para Voltar, o Lula a Roubou!">
+            <img src="imagens/homem aranha - sem volta para casa.jpg" alt="Capa do filme">
+            <h3>Homem Aranha - Sem Volta Para Casa</h3>
+            <p>Nesse Filme Nosso Amigo da Vizinhança Ficou Sem Casa Para Voltar, o Lula a Roubou!</p>
+            <button class="assistir" data-video="#">Assistir</button>
+        </div>
+
+        <div class="card" data-nome="Homem Aranha 2" data-sinopse="Um homem vai encarar o seu destino, um herói sera revelado">
+            <img src="imagens/homem aranha 2.jpg" alt="Capa do filme">
+            <h3>Homem Aranha 2</h3>
+            <p>Um homem vai encarar o seu destino, um herói sera revelado</p>
+            <button class="assistir" data-video="#">Assistir</button>
+        </div>
+
+	    <div class="card" data-nome="Homem Aranha" data-sinopse="Filme do Homem Das Aranhas">
+            <img src="imagens/homem aranha.jpg" alt="Capa do filme">
+            <h3>Homem Aranha</h3>
+            <p>Filme do Homem Das Aranhas</p>
+            <button class="assistir" data-video="#">Assistir</button>
+        </div>
+
+        	<div class="card" data-nome="Homem Aranha 3" data-sinopse="filme Em Que o Homem Aranha Muda De Cor">
+            <img src="imagens/homem aranha 3.jpg" alt="Capa do filme">
+            <h3>Homem Aranha 3</h3>
+            <p>filme Em Que o Homem Aranha Muda De Cor</p>
+            <button class="assistir" data-video="#">Assistir</button>
+        </div>
+
+        	<div class="card" data-nome="O Espetacular Homem Aranha 2" data-sinopse="Nesse Filme o Miranha deixa a Namorada Desviver">
+            <img src="imagens/O espetacular homem Aranha 2.jpg">
+            <h3>O Espetacular Homem Aranha 2</h3>
+            <p>Nesse Filme o Miranha "Deixa" a Namorada Desviver </p>
+            <button class="assistir" data-video="#">Assistir</button>
+        </div>
+    <p id="resultado"></p>
+    <img src="imagens/miranha do creu.gif" width="300" alt="">
+</section>
+
+<section id="sobre" class="sobre">
+    <h2>Sobre o CineDev</h2>
+    <p>O CineDev é um site criado por um grupo de 6 alunos da Instituição Uninassau</p>
+    <h3>Alunos</h3>
+    <ul>
+        <li>Roberto José de Barros júnior - 01261751 <button class="git" onclick="window.open('https://github.com/robertojosedev', '_blank')">Git</button></li>
+    </ul>
+</section>
+
+<section id="contato" class="contato">
+    <h2>Entre em contato</h2>
+    <form id="formulario">
+        <label>Nome:</label>
+        <input type="text" id="nome" required>
+        <label>E-mail:</label>
+        <input type="email" id="email" required>
+        <label>Mensagem:</label>
+        <textarea id="mensagem" rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+    <p id="mensagemForm"></p>
+</section>
+</main>
+
+<footer><p>CineDev &copy; 2026 - Projeto Acadêmico Uninassau</p></footer>
+<script src="js/script.js"></script>
+</body>
+</html>
